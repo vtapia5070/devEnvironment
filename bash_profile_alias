@@ -1,0 +1,29 @@
+Inside the following directory:
+`cd ~`
+List all files using 'la -laFf'
+If you have a .bash_profile file, paste the content below the page break.
+If not, create .bash_profile with `touch .bash_profile`, then paste the content below.
+
+============================================================================================
+
+# ~/.bash_profile
+
+# Add shortcut for list (long, all, typed, fold-sorted).
+alias ll='ls -laFf'
+
+# Add shortcut for common sshes.
+alias ssh_zodiac_testing='ssh -i ~/.ssh/DDN-1.pem ubuntu@zodiac-web-testing-1.aws.ddn.io'
+alias ssh_dolly_testing='ssh -i ~/.ssh/DDN-1.pem ubuntu@ec2-54-215-217-154.us-west-1.compute.amazonaws.com'
+alias ssh_dolly_staging='ssh -i ~/.ssh/DDN-1.pem ubuntu@ec2-52-8-189-45.us-west-1.compute.amazonaws.com'
+alias ssh_dolly_production='ssh -i ~/.ssh/DDN-1.pem ubuntu@ec2-52-8-21-198.us-west-1.compute.amazonaws.com'
+alias sshfs_rebelmouse='cd ~/code/rebelmouse; umount -f .; sshfs tapia@roar-beta-dev.rebelmouse.com:/home/tapia/roars .'
+alias ssh_rebelmouse='ssh tapia@roar-beta-dev.rebelmouse.com'
+
+export NVM_DIR="/Users/victoria/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Add path to Git to start of `$PATH`.
+export PATH=/usr/bin/git:$PATH
+
+# Refer to bash script to enable auto-complete in Git.
+source ~/.git-completion.bash
