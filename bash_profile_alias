@@ -11,9 +11,8 @@ If not, create .bash_profile with `touch .bash_profile`, then paste the content 
 # Add shortcut for list (long, all, typed, fold-sorted).
 alias ll='ls -laFf'
 
-# Add shortcut for common sshes.
-alias sshfs_rebelmouse='cd ~/code/rebelmouse; umount -f .; sshfs tapia@roar-beta-dev.rebelmouse.com:/home/tapia/roars .'
-alias ssh_rebelmouse='ssh tapia@roar-beta-dev.rebelmouse.com'
+# Shortcut for Composer
+alias composer="php /usr/local/bin/composer.phar"
 
 export NVM_DIR="/Users/victoria/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -23,3 +22,5 @@ export PATH=/usr/bin/git:$PATH
 
 # Refer to bash script to enable auto-complete in Git.
 source ~/.git-completion.bash
+
+
