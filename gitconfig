@@ -2,14 +2,14 @@
 
 [user]
   name = victoria tapia
-  email = victoria_tapia@discovery.com
+  email = tapia.victoria5070@gmail.com
 
 [color]
   ui = true
 
 [core]
   autocrlf = input
-  editor = subl -n -w
+  editor = code .
   ignorecase = false
   safecrlf = true
 
